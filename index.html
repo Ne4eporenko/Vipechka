@@ -81,39 +81,79 @@
           вкусных деликатесов, богатых клетчаткой и растительными белками.
         </p>
       </div>
-      <div style="text-align: center; padding: 25px 0px 0px 0px;">
-
       </div>
-      <div class="img_bacground2">
-        <div class="page3">
-          <div class="free_bulki">
-            <img src="./img/bred.webp" style="position: absolute; left: 510px; top: 1290px;" />
-            <img src="./img/baton.webp" style="position: absolute; right: 490px; top: 1290px;" />
-            <img src="./img/bulki.webp" style="position: absolute; right: 620px; top: 1120px;" />
+      <div class="page3">
+        <div class="content_bulki">
+          <div class="img_content">
+            <img src="./img/bulki.webp">
           </div>
-          <div class="text3">
-            <div class="vkusny">
-              <h2>ВКУСНЫЙ</h2>
-              <p>Мы стараемся сделать наш ассортимент </br>
-                вкусным и разнообразным.Таким, чтобы каждый </br>
-                нашел свой любимый вкус.</br></p>
+          <div class="text_content">
+            <h3>ВКУСНЫЙ</h3>
+            <p>Мы стараемся сделать наш ассортимент
+              вкусным и разнообразным.Таким, чтобы каждый
+              нашел свой любимый вкус.</p>
+          </div>
+        </div>
+        <div class="content_down">
+          <div class="content_bred">
+            <div class="img_content">
+              <img src="./img/bred.webp">
             </div>
-            <div class="svegy">
-              <h2>СВЕЖИЙ</h2>
+            <div class="text_content">
+              <h3>СВЕЖИЙ</h3>
               <p>С момента основания предприятияи по сей
-                день наша </br> главная задача −обеспечивать
-                людей вкусным </br>свежим хлебом,выпечкой и
-                кондитерскими </br> изделиямипо доступной цене.</br></p>
+                день наша главная задача −обеспечивать
+                людей вкусным свежим хлебом,выпечкой и
+                кондитерскими изделиямипо доступной цене.</p>
             </div>
-            <div class="natural">
-              <h2>НАТУРАЛЬНЫЙ</h2>
-              <p>Каждый день, независимо от обстоятельств и экономической</br>
-                ситуации мы выбираем только натуральные продукты.</br>
-                Свежий хлеб на столе у каждого!</br></p>
+          </div>
+          <div class="content_baton">
+            <div class="img_content">
+              <img src="./img/baton.webp">
+            </div>
+            <div class="text_content">
+              <h3>НАТУРАЛЬНЫЙ</h3>
+              <p>Каждый день, независимо от обстоятельств и экономической
+                ситуации мы выбираем только натуральные продукты.
+                Свежий хлеб на столе у каждого!</p>
             </div>
           </div>
         </div>
       </div>
+
+
+
+
+
+      <!-- <div class="page3">
+        <div class="free_bulki">
+          <img src="./img/bred.webp" style="position: absolute; left: 510px; top: 1290px;" />
+          <img src="./img/baton.webp" style="position: absolute; right: 490px; top: 1290px;" />
+          <img src="./img/bulki.webp" style="position: absolute; right: 620px; top: 1120px;" />
+        </div>
+        <div class="text3">
+          <div class="vkusny">
+            <h2>ВКУСНЫЙ</h2>
+            <p>Мы стараемся сделать наш ассортимент </br>
+              вкусным и разнообразным.Таким, чтобы каждый </br>
+              нашел свой любимый вкус.</br></p>
+          </div>
+          <div class="svegy">
+            <h2>СВЕЖИЙ</h2>
+            <p>С момента основания предприятияи по сей
+              день наша </br> главная задача −обеспечивать
+              людей вкусным </br>свежим хлебом,выпечкой и
+              кондитерскими </br> изделиямипо доступной цене.</br></p>
+          </div>
+          <div class="natural">
+            <h2>НАТУРАЛЬНЫЙ</h2>
+            <p>Каждый день, независимо от обстоятельств и экономической</br>
+              ситуации мы выбираем только натуральные продукты.</br>
+              Свежий хлеб на столе у каждого!</br></p>
+          </div>
+        </div>
+      </div> -->
+
       <div class="page4">
         <div class="left_section">
           <div>
@@ -280,25 +320,25 @@
     const header = document.querySelector('header');
     const logo_img = document.querySelector('.logo img');
     const menu = document.querySelectorAll('.menu li a');
-    
+
 
     const addColor = (t) => {
       for (let i = 0; i < menu.length; i++) {
-          menu[i].style.color = t ? '#fff' : '';
-        }
+        menu[i].style.color = t ? '#fff' : '';
+      }
     }
 
     window.addEventListener('scroll', _ => {
       if (window.scrollY >= 54) {
         header.classList.add('header_scroll');
-        logo_img.src = "./img/logo_white.webp"; 
+        logo_img.src = "./img/logo_white.webp";
         addColor(1)
 
       } else {
         header.classList.remove('header_scroll');
         logo_img.src = "./img/logo_black.webp";
         addColor(0);
-  
+
       };
 
     });

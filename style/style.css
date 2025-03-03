@@ -17,10 +17,12 @@ header {
     z-index: 1;
     top: 0;
 }
-.header_scroll{
+
+.header_scroll {
     background: #5e2600ab;
     color: white;
 }
+
 main {
     flex: 1 0 auto;
 }
@@ -30,11 +32,17 @@ footer {
     height: 100px;
     background: rgb(50, 127, 71);
 }
-button{
+
+button {
     cursor: pointer;
 }
-p{
-    font-size: 14px;
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 /* block header */
@@ -58,7 +66,8 @@ p{
 .nav_header .menu {
     padding: 0px;
 }
-.menu a{
+
+.menu a {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
     background-position: 0% 100%;
@@ -67,9 +76,11 @@ p{
     transition: background-size .3s;
     color: #5e2500;
 }
-.menu a:hover{
+
+.menu a:hover {
     background-size: 100% 2px;
 }
+
 .heder_row {
     display: flex;
     justify-content: center;
@@ -77,10 +88,11 @@ p{
 
 
 /* block content */
-.content{
+.content {
     max-width: 1300px;
     margin: auto;
 }
+
 .page1 {
     display: flex;
     position: relative;
@@ -133,11 +145,13 @@ p{
     left: 1000px;
     top: -190px;
 }
-.page1 .image_rigth{
+
+.page1 .image_rigth {
     position: absolute;
     right: -110px;
     top: 50px;
 }
+
 .text1 {
     position: absolute;
     right: 0px;
@@ -258,9 +272,11 @@ p{
     width: 700px;
     height: 500px;
 }
-.img1 img{
+
+.img1 img {
     width: 100%;
 }
+
 .btn_orange {
     width: 220px;
     height: 45px;
@@ -276,19 +292,22 @@ p{
     font-weight: lighter;
     font-size: medium;
     text-align: center;
-  } 
-  .btn_orange:hover {
+}
+
+.btn_orange:hover {
     border: 1px solid #e17f3a;
     box-shadow: inset 0 0 20px #e1803abc, 0 0 20px #e1803a5f;
     outline-color: #e17f3a;
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px #e17f3a; 
-  }
-button p{
+    text-shadow: 1px 1px 2px #e17f3a;
+}
+
+button p {
     margin: 0px;
     text-transform: uppercase;
 }
-.btn_grey{
+
+.btn_grey {
     width: 220px;
     height: 45px;
     border: 0 solid #464646;
@@ -303,14 +322,15 @@ button p{
     font-weight: lighter;
     font-size: medium;
     text-align: center;
-  } 
-  .btn_grey:hover {
+}
+
+.btn_grey:hover {
     border: 1px solid #464646;
     box-shadow: inset 0 0 20px #4646469d, 0 0 20px #46464650;
     outline-color: #464646;
     outline-offset: 15px;
-    text-shadow: 1px 1px 2px #464646; 
-  }
+    text-shadow: 1px 1px 2px #464646;
+}
 
 .page2 {
     display: flex;
@@ -320,13 +340,16 @@ button p{
     flex-direction: column;
     text-align: center;
 }
-.image_left{
+
+.image_left {
     position: absolute;
     overflow: hidden;
     left: -352px;
+    top: 50px;
     z-index: -1;
 }
-.image_left img{
+
+.image_left img {
     width: 100%;
     transform: rotate(29deg);
 }
@@ -340,8 +363,56 @@ button p{
 
 
 .page3 {
-    padding: 100px 0px 0px 0px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.text_content {
+    margin: 20px;
+}
+
+.text_content p {
+    width: 300px;
+}
+
+.img_content {
+    background: rgb(246, 185, 79);
+    background: linear-gradient(0deg, rgba(246, 185, 79, 1) 0%, rgba(251, 215, 152, 1) 40%, rgba(249, 204, 126, 1) 100%);
+
+    border-radius: 100%;
+    padding: 20px;
+    width: 200px;
+}
+
+.content_bulki {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 500px;
+    align-items: center;
+    align-items: center;
+}
+
+.content_bred {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 500px;
+    align-items: center;
+}
+
+.content_baton {
+    display: flex;
+    width: 500px;
+    align-items: center;
+}
+
+.content_down {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .vkusny {
@@ -382,14 +453,6 @@ button p{
     position: relative;
 }
 
-.img_bacground2 {
-    background-image: url("../img/big_bred.webp");
-    background-repeat: no-repeat;
-    background-position-x: right;
-
-    width: 1500px;
-    height: 900px;
-}
 
 .page4 {
     display: flex;
