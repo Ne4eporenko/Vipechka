@@ -45,6 +45,11 @@ h1 {
     font-size: 30px;
 }
 
+h3 {
+    margin: 0px;
+    font-size: 20px;
+}
+
 /* block header */
 .header {
     max-width: 1300px;
@@ -389,10 +394,10 @@ button p {
 
 .content_bulki {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     width: 500px;
     align-items: center;
-    align-items: center;
+    margin-left: 250px;
 }
 
 .content_bred {
@@ -400,6 +405,7 @@ button p {
     flex-direction: row-reverse;
     width: 500px;
     align-items: center;
+    text-align: end;
 }
 
 .content_baton {
@@ -415,198 +421,82 @@ button p {
     justify-content: space-around;
 }
 
-.vkusny {
-    max-width: 500px;
-    text-align: center;
-    position: absolute;
-    left: 130px;
-    top: 180px;
-
-
-}
-
-.svegy {
-    max-width: 500px;
-    text-align: center;
-    position: absolute;
-    left: 880px;
-    top: -30px;
-
-}
-
-.natural {
-    max-width: 500px;
-    text-align: center;
-    position: absolute;
-    left: 500px;
-    top: 420px;
-
-}
-
-.free_bilki {
-    display: flex;
-    position: relative;
-}
-
-.text3 {
-    display: flex;
-    position: relative;
-}
-
-
 .page4 {
-    display: flex;
-    justify-content: center;
     position: relative;
-    background-image: url("../img/tri_hleba.webp");
-    background-repeat: no-repeat;
-    background-position-x: left;
-    width: 1500px;
-    height: 720px;
-}
-
-
-
-.left_section {
-    position: absolute;
-    left: 50px;
-}
-
-.right_section {
-    display: flex;
-    position: relative;
-    left: 250px;
-
-}
-
-.right_up {
-    margin-right: 100px;
-    text-align: center;
-}
-
-.right_down {
-    text-align: center;
-    position: relative;
-    top: -38px;
-}
-
-.page_up {
-    display: flex;
-    margin-left: 50px;
-    align-items: center;
-
-
-}
-
-.page_down {
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 50px;
-    margin-top: -40px;
-    align-items: center;
-}
-
-.page6 {
-    width: 1500px;
-    height: 600px;
-}
-
-.otziv {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-
-    margin-right: 50px;
-}
-
-.circle4 {
-    border: 1px solid #5e2500;
-    color: #5e2500;
-    background-color: #ff8400;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-}
-
-.circle5 {
-    border: 1px solid #5e2500;
-    color: #5e2500;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-}
-
-.circle6 {
-    border: 1px solid #5e2500;
-    color: #5e2500;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-}
-
-.slide {
-    max-width: 90px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.page7 {
-    display: flex;
-    align-items: center;
-}
-
-.form_contact {
-    position: relative;
-    left: 200px;
-}
-
-.img_bacground_6 {
-    position: relative;
-    top: 100px;
-    left: 350px;
-}
-
-.form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
-.footer {
+.page4_img {
+    position: absolute;
+    right: -150px;
+    top: 300px;
+}
+
+.page4_img img {
+    width: 100%;
+}
+
+
+.up_section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.down_section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.down_section_content {
     display: flex;
     justify-content: space-around;
-    margin-top: 100px;
-
+    align-items: center;
 }
 
-.footer_left {
-    left: 100px;
-    line-height: 1;
-    margin: 0px 0px 0px 50px;
-
-}
-
-
-.footer_right {
+.content_aside {
+    width: 300px;
     display: flex;
-    line-height: 0px;
-    margin: 30px 0px 0px 0px;
-    padding: 0px 100px 0px 0px;
-
-}
-
-.footer_right div {
-    margin-left: 120px;
-}
-
-.down {
-    margin: 50px 0px 0px 0px;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    font-size: 12px;
-    color: black;
-    font-weight: bold;
-
+    align-items: center;
+    margin-bottom: 50px;
 }
+
+.aside_img {
+    width: 150px;
+}
+
+.aside_img img {
+    width: 100%;
+}
+
+
+
+#cook_star {
+    top: -350px;
+    position: relative;
+    left: 250px;
+}
+
+.content_cook {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cook_text {
+    width: 800px;
+}
+
+.cook_img {
+    width: 350px;
+}
+
+/* block feedback */
+
