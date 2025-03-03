@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="stylesheet" href="./style/style.css">
   <title>the ВЫПЕЧКА. Свежий домашний хлеб прямо из печи</title>
   <meta name="description"
     content="Линейка вкусных деликатесов из смеси муки, злаков и бобовых. Богатая клетчаткой и растительными белками" />
@@ -13,6 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
@@ -216,20 +219,80 @@
 
       <div class="feedback">
         <h2>ОТЗЫВЫ</h2>
-    <div class="block_feedback">
-      <div class="feedback_content">
-        <div class="user_img">
-          <img src="./img/man.webp">
-        </div>
-        <div class="feedback_star"></div>
-        <h5>Иванов Иван</h5>
-        <p>Впечатления остались самые положительные!
-          Тут все на уровне-интерьер,персонал и конечно 
-          кухня-которая заслуживает особого внимания.
-          Будем рекомендовать и вернёмся ещё!</p>
+        <div class="block_feedback">
+          <div class="feedback_content">
+            <div class="user_img">
+              <img src="./img/man.webp">
+            </div>
+            <div class="feedback_star"></div>
+            <h5>Иванов Иван</h5>
+            <p>Впечатления остались самые положительные!
+              Тут все на уровне-интерьер,персонал и конечно
+              кухня-которая заслуживает особого внимания.
+              Будем рекомендовать и вернёмся ещё!</p>
 
-      </div>
-    </div>
+          </div>
+          <div class="feedback_content">
+            <div class="user_img">
+              <img src="./img/girl.webp">
+            </div>
+            <div class="feedback_star"></div>
+            <h5>Ольга Сафронова</h5>
+            <p>Заказали столик на втором этаже возле окна и
+              не пожалели. Отличный вид на вечерний сияющий
+              город!Живая музыка.Разнообразное меню.
+              Морепродукты отменные. Десерты оч. хороши.</p>
+
+          </div>
+          <div class="feedback_content">
+            <div class="user_img">
+              <img src="./img/man.webp">
+            </div>
+            <div class="feedback_star"></div>
+            <h5>Иванов Иван</h5>
+            <p>Впечатления остались самые положительные!
+              Тут все на уровне-интерьер,персонал и конечно
+              кухня-которая заслуживает особого внимания.
+              Будем рекомендовать и вернёмся ещё!</p>
+
+          </div>
+          <div class="feedback_content">
+            <div class="user_img">
+              <img src="./img/girl.webp">
+            </div>
+            <div class="feedback_star"></div>
+            <h5>Ольга Сафронова</h5>
+            <p>Заказали столик на втором этаже возле окна и
+              не пожалели. Отличный вид на вечерний сияющий
+              город!Живая музыка.Разнообразное меню.
+              Морепродукты отменные. Десерты оч. хороши.</p>
+
+          </div>
+          <div class="feedback_content">
+            <div class="user_img">
+              <img src="./img/man.webp">
+            </div>
+            <div class="feedback_star"></div>
+            <h5>Иванов Иван</h5>
+            <p>Впечатления остались самые положительные!
+              Тут все на уровне-интерьер,персонал и конечно
+              кухня-которая заслуживает особого внимания.
+              Будем рекомендовать и вернёмся ещё!</p>
+
+          </div>
+          <div class="feedback_content">
+            <div class="user_img">
+              <img src="./img/girl.webp">
+            </div>
+            <div class="feedback_star"></div>
+            <h5>Ольга Сафронова</h5>
+            <p>Заказали столик на втором этаже возле окна и
+              не пожалели. Отличный вид на вечерний сияющий
+              город!Живая музыка.Разнообразное меню.
+              Морепродукты отменные. Десерты оч. хороши.</p>
+
+          </div>
+        </div>
 
 
       </div>
@@ -330,6 +393,49 @@
       };
 
     });
+  </script>
+  <script type="text/javascript" src="../js/timer.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.block_feedback').slick({
+      dots: true,
+      infinite: false,
+      arrows: false,
+      speed: 800,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+
+
   </script>
 
 </body>
