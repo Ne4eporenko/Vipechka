@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="./style/style.css">
+  <script src="./js/burger.js"></script>
 </head>
 
 <body>
@@ -25,6 +26,9 @@
         <div class="logo">
           <img src="./img/logo_black.webp" width="150" height="50" alt="the Выпечка" />
         </div>
+        <button class="header__burger-btn">
+          <span></span><span></span><span></span>
+        </button>
         <div class="nav_header">
           <ul class="menu">
             <li><a href="">производство</a></li>
@@ -185,7 +189,7 @@
           <div class="content_cook">
             <div class="cook_img">
               <img src="./img/povar1.webp">
-              <img src="./img/4is5.webp" id="cook_star">
+              <div><img src="./img/4is5.webp" id="cook_star"></div>
             </div>
             <div class="cook_text">
               <h4>Лучший повар в области</h4>
@@ -210,7 +214,7 @@
             </div>
             <div class="cook_img">
               <img src="./img/povar2.webp">
-              <img src="./img/5is5.webp" id="cook_star">
+              <div><img src="./img/5is5.webp" id="cook_star"></div>
             </div>
           </div>
         </div>
@@ -306,21 +310,18 @@
                 свяжемся с Вами, что бы обусдить Ваш проект.</br> </p>
             </div>
             <div class="form">
-              <form style="display: flex; flex-direction: column; margin-bottom: 25px; margin-top: 50px;">
-                <input type="text" id="name" placeholder="Имя*" style="margin-bottom: 10px; height: 30px;">
-                <input type="text" id="email" placeholder="Email*" style="margin-bottom: 10px; height: 30px;">
-                <input type="text" id="messeng" placeholder="Сообщение*" style="margin-bottom: 10px; height: 100px;">
+              <form>
+                <input type="text" id="name" placeholder="Имя*">
+                <input type="text" id="email" placeholder="Email*">
+                <input type="text" id="messeng" placeholder="Сообщение*">
               </form>
               <button class="btn_grey">
                 <p>заказать</p>
               </button>
             </div>
           </div>
-          <div>
-            <div class="block_gradient"></div>
-            <div class="img_bacground_6">
-              <img src="./img/cookie.webp">
-            </div>
+          <div class="img_bacground_6">
+            <img src="./img/cookie.webp">
           </div>
         </div>
       </section>
@@ -403,7 +404,6 @@
 
     });
   </script>
-  <script type="text/javascript" src="../js/timer.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -427,14 +427,14 @@
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 800,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 550,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
